@@ -1,0 +1,373 @@
+<html>
+ <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>
+   My Porto
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header .actions {
+            display: flex;
+            align-items: center;
+        }
+        .header .actions a {
+            color: #ffffff;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .profile {
+            text-align: center;
+            margin: 40px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .profile h2 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+        }
+        .profile p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .stats .stat {
+            text-align: center;
+        }
+        .stats .stat h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .stats .stat p {
+            font-size: 16px;
+            margin: 5px 0 0;
+        }
+        .skills, .brands, .projects, .contact {
+            margin: 40px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .skills h3, .brands h3, .projects h3, .contact h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .skills .skill-list, .brands .brand-list, .projects .project-list, .contact .contact-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skills .skill, .brands .brand, .projects .project, .contact .contact-item {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .skills .skill h4, .projects .project h4, .contact .contact-item h4 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .skills .skill p, .projects .project p, .contact .contact-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .brands .brand img {
+            max-width: 100%;
+            height: auto;
+        }
+        .projects .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .contact .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        .contact .contact-item i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .stats {
+                flex-direction: column;
+                align-items: center;
+            }
+            .skills .skill, .brands .brand, .projects .project, .contact .contact-item {
+                flex: 1 1 100%;
+            }
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <h1>
+     HUDZAIFAH U.F
+    </h1>
+    <div class="actions">
+     <a href="#">
+      About
+     </a>
+     <a href="#">
+      Contact
+     </a>
+    </div>
+   </div>
+   <div class="profile">
+    <img alt="PP" height="150" src="./profile.png" width="150"/>
+    <h2>
+     HUDZAIFAH U.F
+    </h2>
+    <p>
+     Info Personal
+    </p>
+    <p>
+        Saya adalah seseorang yang detail-oriented, suka belajar hal baru, dan selalu berusaha memberikan hasil terbaik.
+    </p>
+    <p>
+        Berpengalaman dalam administrasi, data entry, serta memiliki keterampilan di bidang data reporting dan editing foto. Saat ini, saya juga sedang mendalami pengembangan bot WhatsApp dan web designer untuk memperluas skill saya.    </p>
+   </div>
+   <div class="stats">
+    <div class="stat">
+     <h3>
+      2+
+     </h3>
+     <p>
+      Years of Total Experience
+     </p>
+    </div>
+
+   <div class="skills">
+    <h3>
+     About ME
+    </h3>
+    <div class="skill-list">
+     <div class="skill">
+      <h4>
+       Bidang Unggulan
+      </h4>
+      <p>
+        Basic Photography
+       </p> 
+      <p>
+        Photo Editing
+      </p>
+      <p>
+        Basic Coocking
+      </p>
+      <p>
+       Data Report
+      </p>
+      <p>
+       Data Entry
+      </p>
+      <p>
+        Basic English
+       </p>
+ 
+     </div>
+     <div class="skill">
+      <h4>
+       Pengalaman Kerja
+      </h4>
+      <p>
+       Jan - April 2023 : PT. CIPTA KRIDA BAHARI LOGISTIC
+      </p>
+      <p>
+       Jun 2023 - Jan 2024 : Melayani pelanggan dan mengelola kedai di kedai kopi keluarga.
+      </p>
+      <p>
+        Mar - Des 2024 : Pengelolaan taman perumahan Grand Pakuwon.
+       </p>
+       <p>
+        Sep 2021 - Des 2023 : Food Seller
+       </p>
+     </div>
+    </div>
+   </div>
+   <div class="brands">
+    <h3>
+     Dokumentasi
+    </h3>
+    <div class="brand-list">
+     <div class="brand">
+      <img alt="p" height="50" src="" width="100"/>
+     </div>
+     <div class="brand">
+      <img alt="p" height="50" src="" width="100"/>
+     </div>
+     <div class="brand">
+      <img alt="p" height="50" src="" width="100"/>
+     </div>
+     <div class="brand">
+      <img alt="p" height="50" src="" width="100"/>
+     </div>
+     <div class="brand">
+      <img alt="p" height="50" src="" width="100"/>
+     </div>
+    </div>
+   </div>
+   <div class="projects">
+    <h3>
+     Projects
+    </h3>
+    <div class="project-list">
+     <div class="project">
+      <img alt="Project image for Universal UI Kit (Web)" height="200" src="" width="300"/>
+      <h4>
+       .
+      </h4>
+      <p>
+       .
+      </p>
+      <p>
+      .
+      </p>
+     </div>
+     <div class="project">
+      <img alt="Project image for Universal Data Visualization" height="200" src="https://storage.googleapis.com/a1aa/image/7VzY6PHw_2YXnMJ0lWzrKT4w-lMVYkQf-DwmAJ14TGo.jpg" width="300"/>
+      <h4>
+       Universal Data Visualization
+      </h4>
+      <p>
+       Charts and infographics constructor
+      </p>
+      <p>
+       Web Design, Branding, Motion Design
+      </p>
+     </div>
+     <div class="project">
+      <img alt="Project image for Universal Icon Set" height="200" src="" width="300"/>
+      <h4>
+       .
+      </h4>
+      <p>
+       .
+      </p>
+      <p>
+       .
+      </p>
+     </div>
+     <div class="project">
+      <img alt="Project image for Universal Project Management" height="200" src="" width="300"/>
+      <h4>
+       .
+      </h4>
+      <p>
+       .
+      </p>
+      <p>
+       .
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="contact">
+    <h3>
+     Contact
+    </h3>
+    <div class="contact-list">
+     <div class="contact-item">
+      <i class="fas fa-map-marker-alt">
+      </i>
+      <p>
+       Indonesia, Jawa Timur, Surabya.
+      </p>
+     </div>
+     <div class="contact-item">
+      <i class="fas fa-phone">
+      </i>
+      <p>
+       +62 851 6120 0651
+      </p>
+     </div>
+     <div class="contact-item">
+      <i class="fas fa-envelope">
+      </i>
+      <p>
+       ifz7088@gmail.com
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="footer">
+    <p>
+     CONTACT AND SUPPORT
+    </p> 
+    <p>
+     Feel free to send us your feedback about the product at ifz7088@gmail.com
+    </p>
+    <p>
+     For More Info :
+    </p>
+    <p>
+     Instagram | Whatsapp
+    </p>
+   </div>
+  </div>
+  <script>
+   document.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.profile, .stats, .skills, .brands, .projects, .contact');
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (position < windowHeight - 100) {
+                    element.classList.add('visible');
+                }
+            });
+        });
+  </script>
+ </body>
+</html>
